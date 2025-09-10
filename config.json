@@ -1,1 +1,29 @@
-
+{
+  "appConfig": {
+    "appName": "my-demo-app",
+    "version": "1.0.3",
+    "environment": "production",
+    "logging": {
+      "level": "info",
+      "output": "console"
+    },
+    "database": {
+      "type": "postgresql",
+      "host": "db.example.com",
+      "port": 5432,
+      "username": "dbuser",
+      "password": "securePass123!",
+      "databaseName": "appdb"
+    },
+    "features": {
+      "enableCache": true,
+      "maxConnections": 100,
+      "retryAttempts": 3
+    },
+    "api": {
+      "baseUrl": "https://api.my-demo-app.com/v1",
+      "timeout": 30,
+      "retries": 2
+    }
+  }
+}
